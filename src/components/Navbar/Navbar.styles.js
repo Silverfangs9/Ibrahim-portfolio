@@ -1,0 +1,33 @@
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+export const Nav = styled.nav`
+  background-color: #ffeded;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  /* z-index: 10; */
+  border-bottom: 5px solid #b4b4b4;
+  /* border: 3px solid red; */
+`;
+
+export const NavContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 24px;
+`
+
+export const NavLink = styled(Link)`
+  height: 100%;
+  color: #3d2c2c;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 2rem;
+  /* border: 3px solid red; */
+`;
