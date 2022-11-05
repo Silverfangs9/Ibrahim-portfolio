@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineArrowDown, AiOutlineMail, AiFillHtml5 } from "react-icons/ai";
+import {  AiOutlineMail, AiFillHtml5 } from "react-icons/ai";
 import { BsTwitter, BsInstagram } from "react-icons/bs";
 import { SiJavascript, SiPython, SiReact } from "react-icons/si";
 import { IconContext } from "react-icons";

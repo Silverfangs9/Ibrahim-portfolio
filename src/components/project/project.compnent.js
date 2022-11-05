@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { useState, useRef } from "react";
+import { useState, } from "react";
 import {
   Mainconsty,
   Topconsty,
@@ -11,14 +11,13 @@ import {
   Containerdiv,
   MainTopMid,
 } from "./project.styles";
-import { WeatherApi } from "../../utils/weatherApi";
+// import { WeatherApi } from "../../utils/weatherApi";
 import { useEffect } from "react";
 import {
   TiWeatherPartlySunny,
   TiWeatherShower,
   TiWeatherCloudy,
   TiWeatherStormy,
-  TiWeatherSunny,
   TiWeatherWindyCloudy,
   TiWeatherSnow,
 } from "react-icons/ti";
@@ -31,7 +30,7 @@ const Project = () => {
   const today = `${current.getDate()}`;
   const month = `${current.getMonth()}`;
   const year = `${current.getFullYear()}`;
-  const DdMmYy = today + "/" + month + "/" + year;
+  // const DdMmYy = today + "/" + month + "/" + year;
 
   const getDayName = (Weekday) => {
     const days = [
@@ -75,7 +74,7 @@ const Project = () => {
 
   useEffect(() => {
     getWeatherData(seachTerm);
-  }, []);
+  }, );
 
   if (info) {
     return (
