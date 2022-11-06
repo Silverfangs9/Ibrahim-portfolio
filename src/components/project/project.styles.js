@@ -5,11 +5,15 @@ export const Mainconsty = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 89vh;
   width: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   color: red;
   background-image: linear-gradient(lightblue, lightgreen);
+
+  @media screen and (max-width: 460px) {
+    /* font-size: 20px; */
+  }
 `;
 export const MainTopMid = styled.div`
   display: flex;
@@ -17,13 +21,13 @@ export const MainTopMid = styled.div`
   margin-top: 20px;
   & .input {
     outline: none;
-    font-size:20px;
+    font-size: 20px;
     color: rgb(35, 25, 25);
     padding: 12px 20px;
-    border-radius:4px;
+    border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    margin-right:auto;
+    margin-right: auto;
   }
   & .submit {
     padding: 10px;
@@ -42,7 +46,7 @@ export const Topconsty = styled.div`
   height: 100%;
   width: 100vw;
   /* border: 2px solid green; */
-  margin: 10px;
+  /* margin: 10px; */
   color: rgb(35, 25, 25);
 `;
 
@@ -52,8 +56,8 @@ export const Bottomconsty = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin: 10px;
-  border: 2px solid blue;
+  /* margin: 10px; */
+  /* border: 2px solid blue; */
 `;
 
 export const Containerdiv = styled.div`
@@ -72,16 +76,26 @@ export const Topleft = styled.div`
   align-self: left;
   flex-direction: column;
   /* border: 2px solid red ; */
-  padding: 20px;
-  font-size: 20px;
+  padding: 15px;
+  font-size: 35px;
+
+  @media screen and (max-width: 460px) {
+      font-size: 20px;
+      padding-left: 15px;
+    }
 
   & .city {
     font-size: 60px;
-    font-weight: 700;
     text-transform: uppercase;
+    @media screen and (max-width: 460px) {
+      font-size: 35px;
+    }
   }
   & .wind {
-    font-size: 19.5px;
+    font-size: 35px;
+    @media screen and (max-width: 460px) {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -90,6 +104,7 @@ export const Topmid = styled.div`
   flex-direction: column;
   /* border: 2px solid green ; */
   padding-top: 50px;
+  font-size: 25px;
 
   & .weather {
     display: flex;
@@ -104,10 +119,21 @@ export const Topright = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  font-size: 23px;
   /* border: 2px solid yellow ; */
 
+  & .windDeg{
+    @media screen and (max-width: 460px) {
+      font-size: 18px;
+    }
+  }
+
   & .deg {
-    font-size: 40px;
-    padding-top: 30px;
+    font-size: 35px;
+    padding-top: 20px;
+    @media screen and (max-width: 460px) {
+      font-size: 20px;
+      margin-right: 10px;
+    }
   }
 `;

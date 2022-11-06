@@ -95,12 +95,12 @@ const Project = () => {
           <Containerdiv>
             <Topleft>
               <h1 className="city">{info.name}</h1>
-              <h2>{dayName}</h2>
-              <h2>
+              <h3>{dayName}</h3>
+              <h4>
                 {today < 10 ? "0" + today : today}/
                 {month < 10 ? "0" + month : month}/{year}
-              </h2>
-              <h3 className="wind">wind {info.wind.speed}km/h</h3>
+              </h4>
+              <h4 className="wind">wind {info.wind.speed}km/h</h4>
             </Topleft>
             <Topmid>
               <h2>
@@ -140,14 +140,14 @@ const Project = () => {
               </h2>
             </Topmid>
             <Topright>
-              <h3>{info.wind.deg} ⬆ ⬇ </h3>
+              <h3 className="windDeg">{info.wind.deg} ⬆ ⬇ </h3>
               <h2 className="deg">{(info.main.temp - 273).toFixed(2)}°</h2>
             </Topright>
           </Containerdiv>
         </Topconsty>
         <Bottomconsty>
           <div className="Bottom-container">
-            <span>bottom box</span>
+            {/* <span>bottom box</span> */}
           </div>
         </Bottomconsty>
       </Mainconsty>
